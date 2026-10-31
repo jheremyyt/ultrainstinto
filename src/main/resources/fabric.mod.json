@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "uitransform",
+	"version": "${version}",
+	"name": "Ultra Instinct Transformation",
+	"description": "Pulsa una tecla y te transformas: un aura blanca emisiva te cubre, se rompe en particulas brillantes y aparece la skin que elegiste.",
+	"authors": [
+		"UI Transform"
+	],
+	"license": "CC0-1.0",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"dev.uitransform.UiTransformMod"
+		],
+		"client": [
+			"dev.uitransform.client.UiTransformClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "uitransform.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
